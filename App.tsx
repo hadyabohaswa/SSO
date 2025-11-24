@@ -344,7 +344,7 @@ const App: React.FC = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">EdYou Marketing Portal</h2>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">OPTIMUS Marketing Portal</h2>
           <p className="mt-2 text-center text-sm text-gray-600">Sign in to manage courses and users</p>
         </div>
 
@@ -389,7 +389,7 @@ const App: React.FC = () => {
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg">
         <div className="flex items-center justify-center h-16 border-b">
-          <span className="text-xl font-bold text-primary-600">EdYou Portal</span>
+          <span className="text-xl font-bold text-primary-600">OPTIMUS Portal</span>
         </div>
         <div className="p-4 border-b">
            <div className="flex items-center space-x-3">
