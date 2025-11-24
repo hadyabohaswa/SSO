@@ -1,0 +1,25 @@
+name: CI/CD for React + Node Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Stop old containers
+        run: docker compose down || true
+
+      - name: Build images
+        run: docker compose build
+
+      - name: Run containers
+        run: docker compose up -d
+
+      - name: Show running containers
+        run: docker ps
